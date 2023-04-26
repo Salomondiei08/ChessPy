@@ -47,3 +47,4 @@ Once you have it installed, you can run the program and you'll be on your way to
 If you're feeling generous, you can contribute to the program by sending us some chocolate. Just kidding (kind of). Actually, if you have any feedback or suggestions for improvement, feel free to let us know! We're always looking for ways to make this program better.
 
 So what are you waiting for? Download the Chess Tournament Manager now and let the games begin!
+Creator : Salomon DIEI

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: chess_tournament_app/controllers/database_operator.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="chess_tournament_app.controllers.database_operator.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               chess_tournament_app/controllers/database_operator.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  8
+               </span>
+               <strong>E501:</strong> line too long (99 > 79 characters)
+               
+                  (and 4 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (99 > 79 characters):</p>
+               
+               <a href="chess_tournament_app.controllers.database_operator.source.html#l32">
+                  <tt><i>32</i>         <span class="n">all_players_serialized</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">players_table</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="p">[</span><span class="s2">&quot;deleted&quot;</span><span class="p">]]</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (87 > 79 characters):</p>
+               
+               <a href="chess_tournament_app.controllers.database_operator.source.html#l40">
+                  <tt><i>40</i>         <span class="n">results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">players_table</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">query</span><span class="p">[</span><span class="n">filter_by</span><span class="p">]</span> <span class="o">==</span> <span class="n">key_word</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (84 > 79 characters):</p>
+               
+               <a href="chess_tournament_app.controllers.database_operator.source.html#l58">
+                  <tt><i>58</i>     <span class="k">def</span> <span class="nf">update_all_matching_players</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">old_value</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">new_value</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (87 > 79 characters):</p>
+               
+               <a href="chess_tournament_app.controllers.database_operator.source.html#l71">
+                  <tt><i>71</i>         <span class="sd">&quot;&quot;&quot;Changes the value &gt;is_deleted&lt; of a player object in the database to True&quot;&quot;&quot;</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (99 > 79 characters):</p>
+               
+               <a href="chess_tournament_app.controllers.database_operator.source.html#l77">
+                  <tt><i>77</i>     <span class="c1"># ----------------------------------Tournament Operations--------------------------------------</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (81 > 79 characters):</p>
+               
+               <a href="chess_tournament_app.controllers.database_operator.source.html#l109">
+                  <tt><i>109</i>             <span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">tournaments_table</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">t</span><span class="p">[</span><span class="s2">&quot;deleted&quot;</span><span class="p">]]</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (91 > 79 characters):</p>
+               
+               <a href="chess_tournament_app.controllers.database_operator.source.html#l116">
+                  <tt><i>116</i>         <span class="n">results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">tournaments_table</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">query</span><span class="p">[</span><span class="n">filter_by</span><span class="p">]</span> <span class="o">==</span> <span class="n">key_word</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (91 > 79 characters):</p>
+               
+               <a href="chess_tournament_app.controllers.database_operator.source.html#l143">
+                  <tt><i>143</i>         <span class="sd">&quot;&quot;&quot;Changes the value &gt;is_deleted&lt; of a tournament object in the database to True&quot;&quot;&quot;</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
